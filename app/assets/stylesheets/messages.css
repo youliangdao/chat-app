@@ -5,38 +5,61 @@
   height: 100vh;
   width: calc(100% - 300px);
   background-color: #ffffff;
-  padding: 0px 40px;
 }
 .sidebar{
   height: 100vh;
   width: 300px;
-  background-color: #253125;
-  padding: 0 20px;
+  background-color: #253141;
 }
 .chat-title{
   height: 100px;
   width: 100%;
   background-color: #ffffff;
+  padding: 0px 40px;
 }
 .chat-content{
   height: calc(100vh - 190px);
   width: 100%;
   background-color: #FAFAFA;
-  padding-top: 46px;
+  padding: 46px 40px 0px 46px;
 }
 .chat-form{
   height: 90px;
   width: 100%;
   background-color: #DDDDDD;
-  padding: 20px 0;
+  padding: 20px 40px;
 }
 .sidebar-title{
   height: 100px;
   width: 100%;
   background-color: #253141;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 .sidebar-content{
   height: calc(100vh - 100px);
   width: 100%;
   background-color: #2f3e51;
+  overflow: scroll;
+}
+.info a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+.action a{
+  padding: 14px;
+  border: 1px solid lightblue;
+  color: deepskyblue;
+  font-size: 10px;
+  text-decoration: none;
+}
+.sidebar-content li{
+  padding: 20px 20px 40px 20px;
+}
+.sidebar-content a{
+  color: white;
+  text-decoration: none;
 }
