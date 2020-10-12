@@ -43,7 +43,7 @@
   align-items: center;
   padding: 0px 20px;
 }
-.sidebar-content{
+.rooms{
   height: calc(100vh - 100px);
   width: 100%;
   background-color: #2f3e51;
@@ -61,10 +61,10 @@
   font-size: 10px;
   text-decoration: none;
 }
-.sidebar-content li{
-  padding: 20px 20px 40px 20px;
+.room{
+  padding: 20px 0px 40px;
 }
-.sidebar-content a{
+.room-name a{
   color: white;
   text-decoration: none;
 }
