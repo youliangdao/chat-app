@@ -3,15 +3,18 @@ class RoomsController < ApplicationController
     @room = Room.new
     @users = User.where.not(id: current_user.id)
   end
+
   def create
-    Room.create(name: room_params, user_ids: [current_user.id, user_params)
+    @room = Room.new(room_params)
+    if @room.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   private
   def room_params
-    params.require(room).permit(:name)
-  end
-  def user_params
-    params.require(room).permit(:user_id)
+    params.require(:room).permit(:name, :user_ids)
   end
 end
