@@ -9,24 +9,7 @@
   </div>
 </div>
 <div class="chat-content">
-  <div class="group">
-    <div class="head-text">
-      <div class="head-text-name">サンプル</div>
-      <div class="head-text-date">2020/10/11 22:30</div>
-    </div>
-    <div class="foot-text">
-      テスト
-    </div>
-  </div>
-  <div class="group">
-    <div class="head-text">
-      <div class="head-text-name">サンプル</div>
-      <div class="head-text-date">2020/10/11 22:45</div>
-    </div>
-    <div class="foot-text">
-      テストテスト
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
   <div class="form-input">
